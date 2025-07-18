@@ -34,7 +34,7 @@ def commit_to_github(filename, content):
 
     subprocess.run(["git", "-C", repo_path, "add", filename])
     subprocess.run(["git", "-C", repo_path, "commit", "-m", f"Update {filename}"])
-    subprocess.run(["git", "-C", repo_path, "push", repo_url, "HEAD:main"])
+    subprocess.run(["git", "-C", repo_path, "push", repo_url, "HEAD:main", "--force"])
 
 
 # 1. Obtener lista de tareas
