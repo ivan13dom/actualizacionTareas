@@ -20,19 +20,22 @@ GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")  # Definido en Render
 
 # Función para hacer commit a GitHub
 def commit_to_github(filename, content):
-    # Guardar contenido en archivo temporal
     with open(filename, "w") as f:
         json.dump(content, f, indent=4)
 
     repo_url = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
     repo_path = "."
 
-    # Hacer commit y push del archivo actualizado
     subprocess.run(["git", "config", "--global", "user.email", "bot@render.com"])
     subprocess.run(["git", "config", "--global", "user.name", "Render Bot"])
+
+    # Traer cambios antes de hacer commit
+    subprocess.run(["git", "-C", repo_path, "pull", repo_url, "main", "--rebase"])
+
     subprocess.run(["git", "-C", repo_path, "add", filename])
     subprocess.run(["git", "-C", repo_path, "commit", "-m", f"Update {filename}"])
     subprocess.run(["git", "-C", repo_path, "push", repo_url, "HEAD:main"])
+
 
 # 1. Obtener lista de tareas
 @app.route("/tareas", methods=["GET"])
