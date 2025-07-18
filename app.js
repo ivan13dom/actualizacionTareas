@@ -1,10 +1,11 @@
-const API_BASE = "https://actualizaciontareas.onrender.com"; // URL del backend en Render
+const API_BASE = "https://actualizaciontareas.onrender.com"; // Cambia por la URL de tu backend en Render
 
 // Cargar tareas desde el backend
 async function loadTasks() {
     try {
         const response = await fetch(`${API_BASE}/tareas`);
-        const tasks = await response.json(); // Convertir respuesta en JSON
+        if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
+        const tasks = await response.json();
 
         const dropdown = document.getElementById("taskDropdown");
         dropdown.innerHTML = ""; // Limpiar opciones
@@ -20,7 +21,7 @@ async function loadTasks() {
         tasks.forEach(task => {
             const option = document.createElement("option");
             option.value = task.ID;
-            option.textContent = task["Título"]; // Usar la clave exacta
+            option.textContent = task["Título"]; // Campo exacto
             dropdown.appendChild(option);
         });
     } catch (error) {
@@ -29,12 +30,12 @@ async function loadTasks() {
     }
 }
 
-// Guardar actualización en backend
+// Guardar actualización
 async function saveUpdate() {
     const taskId = document.getElementById("taskDropdown").value;
     const comment = document.getElementById("commentInput").value;
 
-    if (!taskId || !comment) {
+    if (!taskId || !comment.trim()) {
         showMessage("Selecciona una tarea y escribe un comentario", "danger");
         return;
     }
@@ -51,8 +52,8 @@ async function saveUpdate() {
         });
 
         if (response.ok) {
-            showMessage("Actualización guardada correctamente", "success");
-            document.getElementById("commentInput").value = ""; // Limpiar
+            showMessage("✅ Actualización guardada correctamente", "success");
+            document.getElementById("commentInput").value = "";
         } else {
             showMessage("Error al guardar la actualización", "danger");
         }
@@ -62,13 +63,13 @@ async function saveUpdate() {
     }
 }
 
-// Mostrar mensajes al usuario
+// Mostrar mensajes
 function showMessage(msg, type) {
     const messageDiv = document.getElementById("message");
     messageDiv.className = `mt-3 alert alert-${type}`;
     messageDiv.textContent = msg;
 }
 
-// Inicialización
+// Eventos
 document.getElementById("submitBtn").addEventListener("click", saveUpdate);
 document.addEventListener("DOMContentLoaded", loadTasks);
