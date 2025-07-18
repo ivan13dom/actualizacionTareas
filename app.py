@@ -4,6 +4,9 @@ import json
 import os
 import datetime
 import subprocess
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
 
 app = Flask(__name__)
 CORS(app)
@@ -47,12 +50,22 @@ def get_tareas():
 def sync_tareas():
     global tareas_data
     try:
-        tareas = request.get_json()
-        tareas_data = tareas  # Guardar en memoria
-        commit_to_github(TAREAS_FILE, tareas)  # Subir a GitHub
+        raw_data = request.data.decode("utf-8")  # Lee el body como texto
+        app.logger.debug(f"Body recibido: {raw_data[:200]}")  # Log de debug (primeros 200 caracteres)
+        
+        try:
+            tareas = json.loads(raw_data)  # Convertir a JSON
+        except json.JSONDecodeError as e:
+            app.logger.error(f"Error parseando JSON: {e}")
+            return jsonify({"error": "JSON inválido"}), 400
+
+        tareas_data = tareas
+        # commit_to_github(TAREAS_FILE, tareas)  # Lo dejamos comentado por ahora para testear
         return jsonify({"status": "ok", "message": "Tareas actualizadas"})
     except Exception as e:
+        app.logger.error(f"Error en sync_tareas: {e}")
         return jsonify({"error": str(e)}), 500
+
 
 # 3. Guardar comentario
 @app.route("/comentarios", methods=["POST"])
