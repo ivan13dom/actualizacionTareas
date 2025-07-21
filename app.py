@@ -4,13 +4,14 @@ import json
 import os
 import datetime
 import subprocess
+import requests
 import logging
-logging.basicConfig(level=logging.DEBUG)
-
 
 app = Flask(__name__)
 CORS(app)
 
+# Logging detallado
+logging.basicConfig(level=logging.DEBUG)
 # Variables en memoria (se reinician si Render reinicia)
 tareas_data = []
 actualizaciones_data = []
