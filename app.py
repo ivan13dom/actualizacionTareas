@@ -68,20 +68,38 @@ def sync_tareas():
 
 
 # 3. Guardar comentario
+import requests
+
 @app.route("/comentarios", methods=["POST"])
 def save_comentario():
     global actualizaciones_data
     try:
         data = request.get_json()
         data["fecha"] = datetime.datetime.now().isoformat()
+
+        # 1. Leer archivo actual desde GitHub RAW
+        raw_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/main/{ACTUALIZACIONES_FILE}"
+        response = requests.get(raw_url)
+
+        if response.status_code == 200:
+            try:
+                actualizaciones_data = response.json()
+            except json.JSONDecodeError:
+                actualizaciones_data = []
+        else:
+            actualizaciones_data = []
+
+        # 2. Agregar nuevo comentario
         actualizaciones_data.append(data)
 
-        # Subir actualizaciones a GitHub
+        # 3. Subir archivo completo actualizado a GitHub
         commit_to_github(ACTUALIZACIONES_FILE, actualizaciones_data)
 
         return jsonify({"status": "ok", "message": "Comentario guardado"})
     except Exception as e:
+        app.logger.error(f"Error en save_comentario: {e}")
         return jsonify({"error": str(e)}), 500
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
