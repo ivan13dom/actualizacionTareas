@@ -21,90 +21,87 @@ TAREAS_FILE = "tareas.json"
 ACTUALIZACIONES_FILE = "actualizaciones.json"
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")  # Definido en Render
 
-# Función para hacer commit a GitHub
+# ==============================
+# Función para hacer commit seguro en GitHub
+# ==============================
 def commit_to_github(filename, content):
-    # Guardar nuevo contenido en el archivo
-    with open(filename, "w") as f:
-        json.dump(content, f, indent=4)
-
     repo_url = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
     repo_path = "."
 
     subprocess.run(["git", "config", "--global", "user.email", "bot@render.com"])
     subprocess.run(["git", "config", "--global", "user.name", "Render Bot"])
 
-    # Limpiar y sincronizar con remoto usando URL completa
+    # Sincronizar con remoto antes de commit
     subprocess.run(["git", "-C", repo_path, "fetch", repo_url])
     subprocess.run(["git", "-C", repo_path, "reset", "--hard", "FETCH_HEAD"])
+
+    # Guardar archivo actualizado
+    with open(filename, "w") as f:
+        json.dump(content, f, indent=4)
 
     # Commit y push
     subprocess.run(["git", "-C", repo_path, "add", filename])
     subprocess.run(["git", "-C", repo_path, "commit", "-m", f"Update {filename}"])
     subprocess.run(["git", "-C", repo_path, "push", repo_url, "HEAD:main"])
 
-
-
-
-# 1. Obtener lista de tareas
+# ==============================
+# Endpoint: Obtener tareas
+# ==============================
 @app.route("/tareas", methods=["GET"])
 def get_tareas():
     return jsonify(tareas_data)
 
-# 2. Sincronizar tareas (desde Power Automate)
+# ==============================
+# Endpoint: Sincronizar tareas (desde Power Automate)
+# ==============================
 @app.route("/sync-tareas", methods=["POST"])
 def sync_tareas():
     global tareas_data
     try:
-        raw_data = request.data.decode("utf-8")  # Lee el body como texto
-        app.logger.debug(f"Body recibido: {raw_data[:200]}")  # Log de debug (primeros 200 caracteres)
-        
-        try:
-            tareas = json.loads(raw_data)  # Convertir a JSON
-        except json.JSONDecodeError as e:
-            app.logger.error(f"Error parseando JSON: {e}")
-            return jsonify({"error": "JSON inválido"}), 400
-
+        raw_data = request.data.decode("utf-8")
+        app.logger.debug(f"Body recibido: {raw_data[:200]}...")
+        tareas = json.loads(raw_data)
         tareas_data = tareas
-        # commit_to_github(TAREAS_FILE, tareas)  # Lo dejamos comentado por ahora para testear
+
+        # Subir backup a GitHub
+        commit_to_github(TAREAS_FILE, tareas)
+
         return jsonify({"status": "ok", "message": "Tareas actualizadas"})
     except Exception as e:
         app.logger.error(f"Error en sync_tareas: {e}")
         return jsonify({"error": str(e)}), 500
 
-
-# 3. Guardar comentario
-import requests
-
+# ==============================
+# Endpoint: Guardar comentario
+# ==============================
 @app.route("/comentarios", methods=["POST"])
 def save_comentario():
-    global actualizaciones_data
     try:
         data = request.get_json()
         data["fecha"] = datetime.datetime.now().isoformat()
 
-        # 1. Leer archivo actual desde GitHub RAW
+        # Leer actualizaciones existentes desde GitHub RAW
         raw_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/main/{ACTUALIZACIONES_FILE}"
         response = requests.get(raw_url)
 
         if response.status_code == 200:
             try:
-                actualizaciones_data = response.json()
+                actualizaciones = response.json()
             except json.JSONDecodeError:
-                actualizaciones_data = []
+                actualizaciones = []
         else:
-            actualizaciones_data = []
+            actualizaciones = []
 
-        # 2. Agregar nuevo comentario
-        actualizaciones_data.append(data)
+        # Agregar nuevo comentario
+        actualizaciones.append(data)
 
-        # 3. Subir archivo completo actualizado a GitHub
-        commit_to_github(ACTUALIZACIONES_FILE, actualizaciones_data)
+        # Subir actualizaciones actualizadas a GitHub
+        commit_to_github(ACTUALIZACIONES_FILE, actualizaciones)
 
         return jsonify({"status": "ok", "message": "Comentario guardado"})
     except Exception as e:
         app.logger.error(f"Error en save_comentario: {e}")
         return jsonify({"error": str(e)}), 500
-
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
