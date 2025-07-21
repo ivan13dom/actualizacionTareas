@@ -23,7 +23,7 @@ GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")  # Definido en Render
 
 # Función para hacer commit a GitHub
 def commit_to_github(filename, content):
-    # Guardar el nuevo contenido en el archivo
+    # Guardar nuevo contenido en el archivo
     with open(filename, "w") as f:
         json.dump(content, f, indent=4)
 
@@ -33,9 +33,9 @@ def commit_to_github(filename, content):
     subprocess.run(["git", "config", "--global", "user.email", "bot@render.com"])
     subprocess.run(["git", "config", "--global", "user.name", "Render Bot"])
 
-    # Sincronizar con remoto para evitar conflictos
-    subprocess.run(["git", "-C", repo_path, "fetch", "origin"])
-    subprocess.run(["git", "-C", repo_path, "reset", "--hard", "origin/main"])
+    # Limpiar y sincronizar con remoto usando URL completa
+    subprocess.run(["git", "-C", repo_path, "fetch", repo_url])
+    subprocess.run(["git", "-C", repo_path, "reset", "--hard", "FETCH_HEAD"])
 
     # Commit y push
     subprocess.run(["git", "-C", repo_path, "add", filename])
