@@ -1,5 +1,16 @@
 [
     {
+        "ID": "E3IiWABYPk6moUNrhAKKM2QAAY5l",
+        "T\u00edtulo": "CASOS | R.21 Reclamo por retiro de colecta en domicilio",
+        "Estado": 50,
+        "Nota": "https://andreani.atlassian.net/browse/CAN-59",
+        "Dep\u00f3sito": "Centro de Contactos",
+        "FechaInicio": "2025-07-11T10:00:00Z",
+        "FechaVencimiento": "2025-07-25T10:00:00Z",
+        "FechaFinalizaci\u00f3n": "",
+        "Asignados": "\"\""
+    },
+    {
         "ID": "vr-OIxAVB0uDkwvpF8zw1GQAOntg",
         "T\u00edtulo": "Casos Automatizaci\u00f3n | R.15 Reclamo por retiro no realizado",
         "Estado": 50,
