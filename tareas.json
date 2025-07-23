@@ -1,5 +1,16 @@
 [
     {
+        "ID": "tVueUbpmqkGRWsuy9x9MHmQAJjTF",
+        "T\u00edtulo": "Casos | Research: App Indemnizaciones - Parte 2",
+        "Estado": 50,
+        "Nota": "https://andreani.atlassian.net/browse/CAN-51",
+        "Dep\u00f3sito": "Centro de Contactos",
+        "FechaInicio": "",
+        "FechaVencimiento": "",
+        "FechaFinalizaci\u00f3n": "",
+        "Asignados": "\"\""
+    },
+    {
         "ID": "E3IiWABYPk6moUNrhAKKM2QAAY5l",
         "T\u00edtulo": "CASOS | R.21 Reclamo por retiro de colecta en domicilio",
         "Estado": 50,
@@ -64,28 +75,6 @@
         "FechaVencimiento": "2025-07-25T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"b85f79de-70fc-48c8-b1eb-e1fc630c76cf, 0ef51bb1-75f2-4aa6-95b9-16f9bb696ac6, "
-    },
-    {
-        "ID": "v558HmNNp0e1yc8XpFBZ1mQAC0_f",
-        "T\u00edtulo": "Gonza",
-        "Estado": 0,
-        "Nota": "",
-        "Dep\u00f3sito": "Centro de Contactos",
-        "FechaInicio": "",
-        "FechaVencimiento": "",
-        "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\"b85f79de-70fc-48c8-b1eb-e1fc630c76cf, "
-    },
-    {
-        "ID": "_aHNs2DwGkihx-Nwcr7wbmQAAGnn",
-        "T\u00edtulo": "Adrian",
-        "Estado": 0,
-        "Nota": "",
-        "Dep\u00f3sito": "Centro de Contactos",
-        "FechaInicio": "",
-        "FechaVencimiento": "",
-        "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\"0ef51bb1-75f2-4aa6-95b9-16f9bb696ac6, "
     },
     {
         "ID": "k_m8O3cMJUaA3UqvM0vMdGQAPcS9",
