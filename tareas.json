@@ -1,12 +1,12 @@
 [
     {
-        "ID": "lf8_crDkMk26-YzuHn-pYWQAM2YY",
-        "T\u00edtulo": "Casos | Caso de demora en la distribuci\u00f3n del DMS con marca de rescate no se cierra",
-        "Estado": 0,
-        "Nota": "",
+        "ID": "e8EgV-uPtky8_PecJ7TcW2QABu1O",
+        "T\u00edtulo": "Casos Automatizaci\u00f3n | R.01: Cierre autom\u00e1tico para PendienteRescate",
+        "Estado": 50,
+        "Nota": "https://andreani.atlassian.net/browse/CAN-44",
         "Dep\u00f3sito": "Centro de Contactos",
-        "FechaInicio": "",
-        "FechaVencimiento": "",
+        "FechaInicio": "2025-07-10T10:00:00Z",
+        "FechaVencimiento": "2025-07-25T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"0ef51bb1-75f2-4aa6-95b9-16f9bb696ac6, "
     },
@@ -16,8 +16,8 @@
         "Estado": 0,
         "Nota": "",
         "Dep\u00f3sito": "Centro de Contactos",
-        "FechaInicio": "",
-        "FechaVencimiento": "2025-07-26T10:00:00Z",
+        "FechaInicio": "2025-07-10T10:00:00Z",
+        "FechaVencimiento": "2025-07-25T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"b85f79de-70fc-48c8-b1eb-e1fc630c76cf, 0ef51bb1-75f2-4aa6-95b9-16f9bb696ac6, "
     },
@@ -28,7 +28,7 @@
         "Nota": "https://andreani.atlassian.net/browse/CAN-41",
         "Dep\u00f3sito": "Centro de Contactos",
         "FechaInicio": "2025-07-10T10:00:00Z",
-        "FechaVencimiento": "2025-07-27T10:00:00Z",
+        "FechaVencimiento": "2025-07-25T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"b85f79de-70fc-48c8-b1eb-e1fc630c76cf, 0ef51bb1-75f2-4aa6-95b9-16f9bb696ac6, "
     },
@@ -207,5 +207,16 @@
         "FechaVencimiento": "2025-08-23T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"2b48a01f-79ef-44dc-84d5-5553664472f6, 3fed79e5-735e-44a4-a916-cbe1fc8c6730, 5a32f54a-a511-4e3c-8b81-39b986912718, "
+    },
+    {
+        "ID": "lf8_crDkMk26-YzuHn-pYWQAM2YY",
+        "T\u00edtulo": "Casos | Caso de demora en la distribuci\u00f3n del DMS con marca de rescate no se cierra",
+        "Estado": 100,
+        "Nota": "",
+        "Dep\u00f3sito": "Centro de Contactos",
+        "FechaInicio": "",
+        "FechaVencimiento": "2025-07-25T10:00:00Z",
+        "FechaFinalizaci\u00f3n": "2025-07-23T19:20:40.6576699Z",
+        "Asignados": "\"\"0ef51bb1-75f2-4aa6-95b9-16f9bb696ac6, "
     }
 ]
