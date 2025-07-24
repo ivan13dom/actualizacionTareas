@@ -1,17 +1,5 @@
 [
     {
-        "ID": "6l-C_hRT6UywJAIhXc2FK2QAC9Ky",
-        "T\u00edtulo": "Cierre de circulo | Automatizado",
-        "Estado": "50",
-        "Etiqueta": "{}",
-        "Nota": "-Se busca automatizar el proceso actual de cierre de circulo (transcripci\u00f3n de audios y medici\u00f3n de sentimiento), se busca abarcar el total de detractores (promedio de 3mil por mes)",
-        "Dep\u00f3sito": "Experiencia Digital",
-        "FechaInicio": "2025-07-10T10:00:00Z",
-        "FechaVencimiento": "2025-07-24T10:00:00Z",
-        "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\"216e107a-68fa-4dbf-836a-87f338da94c1, d4f3b84b-14a1-4b1f-958a-4227f5497ad1, "
-    },
-    {
         "ID": "ZJqyC9SVmE-cn4TH20cv6GQAAc3P",
         "T\u00edtulo": "Gestion de entrega Bigger",
         "Estado": "0",
@@ -310,6 +298,18 @@
         "FechaVencimiento": "2025-08-23T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"2b48a01f-79ef-44dc-84d5-5553664472f6, 3fed79e5-735e-44a4-a916-cbe1fc8c6730, 5a32f54a-a511-4e3c-8b81-39b986912718, "
+    },
+    {
+        "ID": "6l-C_hRT6UywJAIhXc2FK2QAC9Ky",
+        "T\u00edtulo": "Cierre de circulo | Automatizado",
+        "Estado": "100",
+        "Etiqueta": "{}",
+        "Nota": "-Se busca automatizar el proceso actual de cierre de circulo (transcripci\u00f3n de audios y medici\u00f3n de sentimiento), se busca abarcar el total de detractores (promedio de 3mil por mes)",
+        "Dep\u00f3sito": "Experiencia Digital",
+        "FechaInicio": "2025-07-10T10:00:00Z",
+        "FechaVencimiento": "2025-07-24T10:00:00Z",
+        "FechaFinalizaci\u00f3n": "2025-07-24T14:36:19.6106797Z",
+        "Asignados": "\"\"216e107a-68fa-4dbf-836a-87f338da94c1, d4f3b84b-14a1-4b1f-958a-4227f5497ad1, "
     },
     {
         "ID": "HoL7zON560qimihL2ihp7mQABtCh",
