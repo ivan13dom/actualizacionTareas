@@ -1,5 +1,17 @@
 [
     {
+        "ID": "HvX1_rnD_UGXjoEhAO1ekmQACHsE",
+        "T\u00edtulo": "Medicion de Re-contacto en IA",
+        "Estado": "50",
+        "Etiqueta": "{}",
+        "Nota": "Se suma al tablero la medicion del recontacto (cliente q se contacto por mail y dentro de las 48 horas acudi\u00f3 a otros canales).",
+        "Dep\u00f3sito": "Experiencia Digital",
+        "FechaInicio": "",
+        "FechaVencimiento": "",
+        "FechaFinalizaci\u00f3n": "",
+        "Asignados": "\"\"15f34c4a-4ae7-4ae5-bc61-610fd4881533, 216e107a-68fa-4dbf-836a-87f338da94c1, "
+    },
+    {
         "ID": "YVX9NpL4LkSeYnU-K3hRzmQAMNCt",
         "T\u00edtulo": "IVR - Identificaci\u00f3n Destinatarios (con login A.com)",
         "Estado": "50",
@@ -10,18 +22,6 @@
         "FechaVencimiento": "2025-07-24T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"c49e46a7-4949-407a-918a-c00b51cbdca3, d4f3b84b-14a1-4b1f-958a-4227f5497ad1, "
-    },
-    {
-        "ID": "HvX1_rnD_UGXjoEhAO1ekmQACHsE",
-        "T\u00edtulo": "Medicion de Re-contacto en IA",
-        "Estado": "50",
-        "Etiqueta": "{}",
-        "Nota": "Se suma al tablero la medicion del recontacto (cliente q se contacto por mail y dentro de las 48 horas acudi\u00f3 a otros canales).",
-        "Dep\u00f3sito": "Experiencia Digital",
-        "FechaInicio": "",
-        "FechaVencimiento": "",
-        "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\"15f34c4a-4ae7-4ae5-bc61-610fd4881533, "
     },
     {
         "ID": "Zix7DCXDeUGwEnV8SYH3kWQAIQ8B",
