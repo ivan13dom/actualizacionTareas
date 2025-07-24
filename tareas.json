@@ -1,17 +1,5 @@
 [
     {
-        "ID": "1_FsukL_ekCDeVSDbh2RO2QAATly",
-        "T\u00edtulo": "Contingencia Notificacion eventual (R.01)",
-        "Estado": "50",
-        "Etiqueta": "{}",
-        "Nota": "",
-        "Dep\u00f3sito": "Experiencia Sucursal",
-        "FechaInicio": "2025-07-22T10:00:00Z",
-        "FechaVencimiento": "2025-07-22T10:00:00Z",
-        "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\""
-    },
-    {
         "ID": "Zix7DCXDeUGwEnV8SYH3kWQAIQ8B",
         "T\u00edtulo": "Eficiencia IVR consultas - (sin pase a Op.)",
         "Estado": "50",
@@ -298,5 +286,17 @@
         "FechaVencimiento": "2025-08-23T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"2b48a01f-79ef-44dc-84d5-5553664472f6, 3fed79e5-735e-44a4-a916-cbe1fc8c6730, 5a32f54a-a511-4e3c-8b81-39b986912718, "
+    },
+    {
+        "ID": "1_FsukL_ekCDeVSDbh2RO2QAATly",
+        "T\u00edtulo": "Contingencia Notificacion eventual (R.01)",
+        "Estado": "100",
+        "Etiqueta": "{}",
+        "Nota": "Se emitio una notificacion de contingencia a 5000 clientes que tenian un caso cargado por R.01, con la finalizadad de contener y evitar el recontacto",
+        "Dep\u00f3sito": "Experiencia Sucursal",
+        "FechaInicio": "2025-07-24T10:00:00Z",
+        "FechaVencimiento": "2025-07-24T10:00:00Z",
+        "FechaFinalizaci\u00f3n": "2025-07-24T13:55:02.2006278Z",
+        "Asignados": "\"\"5a32f54a-a511-4e3c-8b81-39b986912718, c49e46a7-4949-407a-918a-c00b51cbdca3, "
     }
 ]
