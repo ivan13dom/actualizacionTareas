@@ -216,18 +216,6 @@
         "Asignados": "\"\"216e107a-68fa-4dbf-836a-87f338da94c1, ff075903-ddef-400c-8f50-08ae04de71ce, "
     },
     {
-        "ID": "nVgA3SHbS0OrGJ789YHfM2QAEaTf",
-        "T\u00edtulo": "Correccion carga de asuntos | IA mail",
-        "Estado": "50",
-        "Etiqueta": "{}",
-        "Nota": "Requerimiento:\r\n\r\n- Mejorar el criterio de la IA ante la carga de asuntos",
-        "Dep\u00f3sito": "Experiencia Digital",
-        "FechaInicio": "2025-01-31T10:00:00Z",
-        "FechaVencimiento": "",
-        "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\"15f34c4a-4ae7-4ae5-bc61-610fd4881533, c49e46a7-4949-407a-918a-c00b51cbdca3, "
-    },
-    {
         "ID": "kw-qEn5oV0uxIz9sc-ZygmQAOwF5",
         "T\u00edtulo": "Data | Analisis de Consultas IVR.",
         "Estado": "50",
@@ -248,18 +236,6 @@
         "Dep\u00f3sito": "Experiencia Digital",
         "FechaInicio": "2025-07-01T10:00:00Z",
         "FechaVencimiento": "2025-08-25T10:00:00Z",
-        "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\"c49e46a7-4949-407a-918a-c00b51cbdca3, d4f3b84b-14a1-4b1f-958a-4227f5497ad1, "
-    },
-    {
-        "ID": "ydyjIzthbkCJyuVRA10iqmQALFJ3",
-        "T\u00edtulo": "Asistencia humana | Wapp Pymes",
-        "Estado": "50",
-        "Etiqueta": "{}",
-        "Nota": "Requerimiento:\r\n\r\n- Posibilidad de\nderivaci\u00f3n a agente\ndigital en chat, ante\nrespuesta negativa a\nencuesta de\nresolutividad PyME",
-        "Dep\u00f3sito": "Experiencia Digital",
-        "FechaInicio": "2024-12-24T10:00:00Z",
-        "FechaVencimiento": "2025-05-06T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"c49e46a7-4949-407a-918a-c00b51cbdca3, d4f3b84b-14a1-4b1f-958a-4227f5497ad1, "
     },
@@ -286,6 +262,18 @@
         "FechaVencimiento": "2025-08-23T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"2b48a01f-79ef-44dc-84d5-5553664472f6, 3fed79e5-735e-44a4-a916-cbe1fc8c6730, 5a32f54a-a511-4e3c-8b81-39b986912718, "
+    },
+    {
+        "ID": "ydyjIzthbkCJyuVRA10iqmQALFJ3",
+        "T\u00edtulo": "Asistencia humana | Wapp Pymes",
+        "Estado": "100",
+        "Etiqueta": "{}",
+        "Nota": "Requerimiento:\r\n\r\n- Posibilidad de\nderivaci\u00f3n a agente\ndigital en chat, ante\nrespuesta negativa a\nencuesta de\nresolutividad PyME",
+        "Dep\u00f3sito": "Experiencia Digital",
+        "FechaInicio": "2024-12-24T10:00:00Z",
+        "FechaVencimiento": "2025-05-06T10:00:00Z",
+        "FechaFinalizaci\u00f3n": "2025-07-24T13:57:11.1935307Z",
+        "Asignados": "\"\"c49e46a7-4949-407a-918a-c00b51cbdca3, d4f3b84b-14a1-4b1f-958a-4227f5497ad1, "
     },
     {
         "ID": "1_FsukL_ekCDeVSDbh2RO2QAATly",
