@@ -1,17 +1,5 @@
 [
     {
-        "ID": "33VeHg05ZUSZ_5K9sxvKnGQAAIwN",
-        "T\u00edtulo": "Nordelta- Descuento para detractores",
-        "Estado": "0",
-        "Etiqueta": "{}",
-        "Nota": "C\u00f3digo de descuento para incrementar feedback de clientes detractores.",
-        "Dep\u00f3sito": "Experiencia Sucursal",
-        "FechaInicio": "2025-04-03T10:00:00Z",
-        "FechaVencimiento": "2025-05-14T10:00:00Z",
-        "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\"5a32f54a-a511-4e3c-8b81-39b986912718, "
-    },
-    {
         "ID": "Ce2_UBnMSEa4kdQBdpET0mQADuUo",
         "T\u00edtulo": "Nordelta- Mejoras soporte TI",
         "Estado": "50",
@@ -268,7 +256,7 @@
         "T\u00edtulo": "Nordelta - Mejoras experiencia ",
         "Estado": "50",
         "Etiqueta": "{}",
-        "Nota": "Pendientes\r\n\r\n- Modificar\n     el tiempo m\u00e1ximo del Drop (cada 10 env\u00edos).\r\n- Pedir\n     a marketing cartel con QR para wifi de Nordelta.\r\n- Modificaciones\n     de las instalaciones en sucursal, pantallas, mostradores y la ampliaci\u00f3n\n     del sector de la operaci\u00f3n.\r\n\r\nFrenado \r\n\r\n- Pago\n     a trav\u00e9s de QR\r\n- Rampa\n     de acceso de frente\r\n- Lookers\r\n- Definir\n     m\u00e9tricas para el tablero\r\n\r\nImplementado \r\n\r\n- C\u00f3digo\n     de descuento para incrementar feedback de clientes detractores.",
+        "Nota": "Pendientes\r\n\r\n- Modificar\n     el tiempo m\u00e1ximo del Drop (cada 10 env\u00edos).\r\n- Pedir\n     a marketing cartel con QR para wifi de Nordelta.\r\n- Modificaciones\n     de las instalaciones en sucursal, pantallas, mostradores y la ampliaci\u00f3n\n     del sector de la operaci\u00f3n.\r\n\r\nFrenado \r\n\r\n- Pago\n     a trav\u00e9s de QR\r\n- Rampa\n     de acceso de frente\r\n- Lookers\r\n- Definir\n     m\u00e9tricas para el tablero",
         "Dep\u00f3sito": "Experiencia Sucursal",
         "FechaInicio": "",
         "FechaVencimiento": "",
@@ -346,6 +334,18 @@
         "FechaVencimiento": "2025-08-23T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"2b48a01f-79ef-44dc-84d5-5553664472f6, 3fed79e5-735e-44a4-a916-cbe1fc8c6730, 5a32f54a-a511-4e3c-8b81-39b986912718, "
+    },
+    {
+        "ID": "33VeHg05ZUSZ_5K9sxvKnGQAAIwN",
+        "T\u00edtulo": "Nordelta- Descuento para detractores",
+        "Estado": "100",
+        "Etiqueta": "{}",
+        "Nota": "C\u00f3digo de descuento para incrementar feedback de clientes detractores.",
+        "Dep\u00f3sito": "Experiencia Sucursal",
+        "FechaInicio": "2025-04-03T10:00:00Z",
+        "FechaVencimiento": "2025-05-14T10:00:00Z",
+        "FechaFinalizaci\u00f3n": "2025-07-25T14:18:50.8793333Z",
+        "Asignados": "\"\"5a32f54a-a511-4e3c-8b81-39b986912718, "
     },
     {
         "ID": "uHPHaiCsqU6vC6CLR9011GQAEauK",
