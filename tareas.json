@@ -5,7 +5,7 @@
         "Estado": "50",
         "Etiqueta": "{}",
         "Nota": "- Andi, flujo de conversaci\u00f3n  de Clientes con m\u00e1s de un env\u00edo,\r\n- Habilitar derivaci\u00f3n a operativo y que vuelva luego a la ejecutiva asignada.\r\n- Clientes con inconvenientes t\u00e9cnicos, que puedan ser ingresados manual o por otro medio a la app de atenci\u00f3n\r\n- Notificaci\u00f3n en el ingreso de nuevos clientes a la cola de atenci\u00f3n\r\n- Sonido en pantalla de recepci\u00f3n, al ingreso del cliente en la cola de atenci\u00f3n",
-        "Dep\u00f3sito": "Experiencia Digital",
+        "Dep\u00f3sito": "Experiencia Sucursal",
         "FechaInicio": "2025-01-28T10:00:00Z",
         "FechaVencimiento": "",
         "FechaFinalizaci\u00f3n": "",
