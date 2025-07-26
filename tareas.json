@@ -1,57 +1,5 @@
 [
     {
-        "ID": "ymWP_6lPtkqtgsaGddKY-GQABhCy",
-        "T\u00edtulo": "baja",
-        "Estado": "0",
-        "Prioridad": "9",
-        "Etiqueta": "{}",
-        "Nota": "",
-        "Dep\u00f3sito": "Experiencia Sucursal",
-        "FechaInicio": "",
-        "FechaVencimiento": "",
-        "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\""
-    },
-    {
-        "ID": "c1QZuro3s06OUL2t0_0XUmQAIGXd",
-        "T\u00edtulo": "media",
-        "Estado": "0",
-        "Prioridad": "5",
-        "Etiqueta": "{}",
-        "Nota": "",
-        "Dep\u00f3sito": "Experiencia Sucursal",
-        "FechaInicio": "",
-        "FechaVencimiento": "",
-        "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\""
-    },
-    {
-        "ID": "Cqh9hpTLg0y9JoGq8OlHimQAAT9a",
-        "T\u00edtulo": "importante",
-        "Estado": "0",
-        "Prioridad": "3",
-        "Etiqueta": "{}",
-        "Nota": "",
-        "Dep\u00f3sito": "Experiencia Sucursal",
-        "FechaInicio": "",
-        "FechaVencimiento": "",
-        "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\""
-    },
-    {
-        "ID": "3zPJfLVPxkuGIAWvs0z-MWQALHmO",
-        "T\u00edtulo": "urgente",
-        "Estado": "0",
-        "Prioridad": "1",
-        "Etiqueta": "{}",
-        "Nota": "",
-        "Dep\u00f3sito": "Experiencia Sucursal",
-        "FechaInicio": "",
-        "FechaVencimiento": "",
-        "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\""
-    },
-    {
         "ID": "Ce2_UBnMSEa4kdQBdpET0mQADuUo",
         "T\u00edtulo": "Nordelta- Mejoras soporte TI",
         "Estado": "50",
