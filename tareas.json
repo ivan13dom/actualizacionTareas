@@ -254,8 +254,8 @@
         "Etiqueta": "{}",
         "Nota": "Mejorar informaci\u00f3n de la BBDD la misma deber\u00e1 traer\r\n\r\n Dato cliente, nro de env\u00edo, asunto, mail y fecha de env\u00edo de encuesta.\r\n\r\nCantidad de encuestas se env\u00edan x d\u00eda.\r\n incorporar caducidad de la encuesta para que el cliente tenga la posibilidad de responder sobre la encuesta hasta 7 dias post resoluci\u00f3n.",
         "Dep\u00f3sito": "Experiencia Sucursal",
-        "FechaInicio": "",
-        "FechaVencimiento": "",
+        "FechaInicio": "2025-06-25T10:00:00Z",
+        "FechaVencimiento": "2025-09-30T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"c583be05-dd42-418b-925f-45e65b5001c0, "
     },
@@ -268,7 +268,7 @@
         "Nota": "Se dise\u00f1o un script en Python para tomar los archivos de audio de las grabaciones de las llamadas de cierre de circulo. Se aplico un modelo de IA para transcribir y analizar el sentimiento al inicio y al final de la llamada para entender el impacto de la misma en el cliente.\r\n\r\nSe pasa la tarea a TI para la optimizaci\u00f3n del proceso.",
         "Dep\u00f3sito": "Experiencia Sucursal",
         "FechaInicio": "2025-07-02T10:00:00Z",
-        "FechaVencimiento": "",
+        "FechaVencimiento": "2025-10-31T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"216e107a-68fa-4dbf-836a-87f338da94c1, c583be05-dd42-418b-925f-45e65b5001c0, "
     },
