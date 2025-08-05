@@ -1,5 +1,18 @@
 [
     {
+        "ID": "MGleOCueYEGvnxYK2WOEmmQAGmeX",
+        "T\u00edtulo": "Store Locator ",
+        "Estado": "50",
+        "Prioridad": "5",
+        "Etiqueta": "{}",
+        "Nota": "El objetivo es mejorar la experiencia de nuestros clientes dentro del buscador de sucursal en a.com. \r\n-Habilitaci\u00f3n de bot\u00f3n de acceso a indicaciones de ruta.\r\n-Visibilidad de rese\u00f1as positivas sobre la sucu elegida.\r\n-Incorporaci\u00f3n de diferentes filtros que le faciliten la b\u00fasqueda al cliente.\r\n-Impacto autom\u00e1tico en a.com de modificaciones realizadas desde GMN (cambios de horarios - cierre - mudanzas - etc).",
+        "Dep\u00f3sito": "Experiencia Sucursal",
+        "FechaInicio": "2025-06-01T10:00:00Z",
+        "FechaVencimiento": "2025-08-31T10:00:00Z",
+        "FechaFinalizaci\u00f3n": "",
+        "Asignados": "\"\"2b48a01f-79ef-44dc-84d5-5553664472f6, 3fed79e5-735e-44a4-a916-cbe1fc8c6730, "
+    },
+    {
         "ID": "O2QCCZPEqEGM07R-HgxmQ2QAJhO0",
         "T\u00edtulo": "Cierre de circulo - IA",
         "Estado": "50",
@@ -245,19 +258,6 @@
         "FechaVencimiento": "2025-08-25T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"c49e46a7-4949-407a-918a-c00b51cbdca3, d4f3b84b-14a1-4b1f-958a-4227f5497ad1, "
-    },
-    {
-        "ID": "MGleOCueYEGvnxYK2WOEmmQAGmeX",
-        "T\u00edtulo": "Store Locator ",
-        "Estado": "50",
-        "Prioridad": "5",
-        "Etiqueta": "{}",
-        "Nota": "El objetivo es mejorar la experiencia de nuestros clientes dentro del buscador de sucursal en a.com. \r\n-Habilitaci\u00f3n de bot\u00f3n de acceso a indicaciones de ruta.\r\n-Visibilidad de rese\u00f1as positivas sobre la sucu elegida.\r\n-Incorporaci\u00f3n de diferentes filtros que le faciliten la b\u00fasqueda al cliente.\r\n-Impacto autom\u00e1tico en a.com de modificaciones realizadas desde GMN (cambios de horarios - cierre - mudanzas - etc).",
-        "Dep\u00f3sito": "Experiencia Sucursal",
-        "FechaInicio": "2025-06-01T10:00:00Z",
-        "FechaVencimiento": "2025-08-31T10:00:00Z",
-        "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\"2b48a01f-79ef-44dc-84d5-5553664472f6, 3fed79e5-735e-44a4-a916-cbe1fc8c6730, "
     },
     {
         "ID": "OWT23GNLykmQt4kJtLKm8GQAHaxT",
