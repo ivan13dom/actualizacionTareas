@@ -197,13 +197,13 @@
     {
         "ID": "MuarZMb7RUacpkDXBJUFjGQAJmcY",
         "T\u00edtulo": "Proyecto Gral Paz",
-        "Estado": "0",
+        "Estado": "50",
         "Prioridad": "5",
         "Etiqueta": "{}",
         "Nota": "Objetivo: \r\n\r\nOptimizar el espacio f\u00edsico de la sucursal para mejorar la experiencia del cliente a trav\u00e9s de una distribuci\u00f3n m\u00e1s clara, sectorizada y orientada a la autogesti\u00f3n, reduciendo tiempos de espera y generando una atenci\u00f3n m\u00e1s fluida y eficiente.\r\n\r\nPropuesta: Se propone una redistribuci\u00f3n sectorizada en tres \u00e1reas bien diferenciadas con las identificaciones correspondientes\r\n-Retirar con Andi\r\n-Despachos Drop\r\n-Consultas y ventas",
         "Dep\u00f3sito": "Experiencia Sucursal",
         "FechaInicio": "",
-        "FechaVencimiento": "",
+        "FechaVencimiento": "2025-08-31T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"2b48a01f-79ef-44dc-84d5-5553664472f6, "
     },
@@ -255,7 +255,7 @@
         "Nota": "El objetivo es mejorar la experiencia de nuestros clientes dentro del buscador de sucursal en a.com. \r\n-Habilitaci\u00f3n de bot\u00f3n de acceso a indicaciones de ruta.\r\n-Visibilidad de rese\u00f1as positivas sobre la sucu elegida.\r\n-Incorporaci\u00f3n de diferentes filtros que le faciliten la b\u00fasqueda al cliente.\r\n-Impacto autom\u00e1tico en a.com de modificaciones realizadas desde GMN (cambios de horarios - cierre - mudanzas - etc).",
         "Dep\u00f3sito": "Experiencia Sucursal",
         "FechaInicio": "2025-06-01T10:00:00Z",
-        "FechaVencimiento": "2025-07-12T10:00:00Z",
+        "FechaVencimiento": "2025-08-31T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"2b48a01f-79ef-44dc-84d5-5553664472f6, "
     },
