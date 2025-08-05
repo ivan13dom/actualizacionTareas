@@ -1,5 +1,18 @@
 [
     {
+        "ID": "O2QCCZPEqEGM07R-HgxmQ2QAJhO0",
+        "T\u00edtulo": "Cierre de circulo - IA",
+        "Estado": "50",
+        "Prioridad": "5",
+        "Etiqueta": "{}",
+        "Nota": "Se dise\u00f1o un script en Python para tomar los archivos de audio de las grabaciones de las llamadas de cierre de circulo. Se aplico un modelo de IA para transcribir y analizar el sentimiento al inicio y al final de la llamada para entender el impacto de la misma en el cliente.\r\n\r\nSe pasa la tarea a TI para la optimizaci\u00f3n del proceso.",
+        "Dep\u00f3sito": "Experiencia Sucursal",
+        "FechaInicio": "2025-07-02T10:00:00Z",
+        "FechaVencimiento": "2025-10-31T10:00:00Z",
+        "FechaFinalizaci\u00f3n": "",
+        "Asignados": "\"\"216e107a-68fa-4dbf-836a-87f338da94c1, c583be05-dd42-418b-925f-45e65b5001c0, d4f3b84b-14a1-4b1f-958a-4227f5497ad1, "
+    },
+    {
         "ID": "cEbfbcgYBkCSd6wvnNfu6GQAFjHX",
         "T\u00edtulo": "Encuesta CASOS",
         "Estado": "50",
@@ -167,19 +180,6 @@
         "FechaVencimiento": "",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"2b48a01f-79ef-44dc-84d5-5553664472f6, 5a32f54a-a511-4e3c-8b81-39b986912718, "
-    },
-    {
-        "ID": "O2QCCZPEqEGM07R-HgxmQ2QAJhO0",
-        "T\u00edtulo": "Cierre de circulo - IA",
-        "Estado": "50",
-        "Prioridad": "5",
-        "Etiqueta": "{}",
-        "Nota": "Se dise\u00f1o un script en Python para tomar los archivos de audio de las grabaciones de las llamadas de cierre de circulo. Se aplico un modelo de IA para transcribir y analizar el sentimiento al inicio y al final de la llamada para entender el impacto de la misma en el cliente.\r\n\r\nSe pasa la tarea a TI para la optimizaci\u00f3n del proceso.",
-        "Dep\u00f3sito": "Experiencia Sucursal",
-        "FechaInicio": "2025-07-02T10:00:00Z",
-        "FechaVencimiento": "2025-10-31T10:00:00Z",
-        "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\"216e107a-68fa-4dbf-836a-87f338da94c1, c583be05-dd42-418b-925f-45e65b5001c0, "
     },
     {
         "ID": "00Gcg2qTy0yOK1SFbSsvJWQAK0Vs",
