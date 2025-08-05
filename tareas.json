@@ -1,18 +1,5 @@
 [
     {
-        "ID": "XcSowy8HsUSg6JgRv26LyGQACoo1",
-        "T\u00edtulo": "Tablero Experiencia Hop",
-        "Estado": "0",
-        "Prioridad": "5",
-        "Etiqueta": "{}",
-        "Nota": "",
-        "Dep\u00f3sito": "Experiencia Sucursal",
-        "FechaInicio": "",
-        "FechaVencimiento": "",
-        "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\""
-    },
-    {
         "ID": "MGleOCueYEGvnxYK2WOEmmQAGmeX",
         "T\u00edtulo": "Store Locator ",
         "Estado": "50",
@@ -284,6 +271,19 @@
         "FechaVencimiento": "2025-08-23T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"2b48a01f-79ef-44dc-84d5-5553664472f6, 3fed79e5-735e-44a4-a916-cbe1fc8c6730, 5a32f54a-a511-4e3c-8b81-39b986912718, "
+    },
+    {
+        "ID": "XcSowy8HsUSg6JgRv26LyGQACoo1",
+        "T\u00edtulo": "Tablero Experiencia Hop",
+        "Estado": "100",
+        "Prioridad": "5",
+        "Etiqueta": "{}",
+        "Nota": "",
+        "Dep\u00f3sito": "Experiencia Sucursal",
+        "FechaInicio": "",
+        "FechaVencimiento": "",
+        "FechaFinalizaci\u00f3n": "2025-08-05T17:47:57.2804893Z",
+        "Asignados": "\"\""
     },
     {
         "ID": "CFD3ghQ0Fk2I9X-rcCN1q2QACu5f",
