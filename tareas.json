@@ -1,13 +1,13 @@
 [
     {
-        "ID": "CFD3ghQ0Fk2I9X-rcCN1q2QACu5f",
-        "T\u00edtulo": "Challenge Hot Sale",
+        "ID": "XcSowy8HsUSg6JgRv26LyGQACoo1",
+        "T\u00edtulo": "Tablero Experiencia Hop",
         "Estado": "0",
         "Prioridad": "5",
         "Etiqueta": "{}",
         "Nota": "",
         "Dep\u00f3sito": "Experiencia Sucursal",
-        "FechaInicio": "2025-05-01T10:00:00Z",
+        "FechaInicio": "",
         "FechaVencimiento": "",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\""
@@ -284,6 +284,19 @@
         "FechaVencimiento": "2025-08-23T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"2b48a01f-79ef-44dc-84d5-5553664472f6, 3fed79e5-735e-44a4-a916-cbe1fc8c6730, 5a32f54a-a511-4e3c-8b81-39b986912718, "
+    },
+    {
+        "ID": "CFD3ghQ0Fk2I9X-rcCN1q2QACu5f",
+        "T\u00edtulo": "Challenge Hot Sale",
+        "Estado": "100",
+        "Prioridad": "5",
+        "Etiqueta": "{}",
+        "Nota": "Se desarrollo un sistema de votaci\u00f3n en las notificaciones por mail para que los clientes puedan votar por la sucursal donde retiraron su env\u00edo, por si o por no, si la sucursal otorgo una buena experiencia.",
+        "Dep\u00f3sito": "Experiencia Sucursal",
+        "FechaInicio": "2025-05-01T10:00:00Z",
+        "FechaVencimiento": "2025-05-31T10:00:00Z",
+        "FechaFinalizaci\u00f3n": "2025-08-05T17:47:03.4833217Z",
+        "Asignados": "\"\""
     },
     {
         "ID": "bFw0R-mdMkyEH3RfrD6hlGQAPAmi",
