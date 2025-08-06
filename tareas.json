@@ -265,7 +265,7 @@
         "Estado": "0",
         "Prioridad": "3",
         "Etiqueta": "{}",
-        "Nota": "Implementar el nuevo m\u00f3dulo de retiro a trav\u00e9s de ANDI",
+        "Nota": "Despliegue del nuevo modelo de atenci\u00f3n para el retiro de env\u00edos. \nSucursales:\n- Tucuman (CENTRO)\r\n- Jujuy\r\n- Tucum\u00e1n\r\n- Rosario (eva peron)",
         "Dep\u00f3sito": "Experiencia Sucursal",
         "FechaInicio": "2025-05-20T10:00:00Z",
         "FechaVencimiento": "2025-07-31T10:00:00Z",
