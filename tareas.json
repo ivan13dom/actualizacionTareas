@@ -1,5 +1,18 @@
 [
     {
+        "ID": "M2QzpzgMP0q1NoKzg-HCamQAHMjn",
+        "T\u00edtulo": "San Pedro + Acciones urgente para mejorar la experiencia del cliente en sucursal",
+        "Estado": "0",
+        "Prioridad": "5",
+        "Etiqueta": "{}",
+        "Nota": "",
+        "Dep\u00f3sito": "Experiencia Sucursal",
+        "FechaInicio": "2024-08-27T10:00:00Z",
+        "FechaVencimiento": "2025-08-07T10:00:00Z",
+        "FechaFinalizaci\u00f3n": "",
+        "Asignados": "\"\"2b48a01f-79ef-44dc-84d5-5553664472f6, "
+    },
+    {
         "ID": "VSFGggwHCUWBHYfxECCS1mQAM-Z1",
         "T\u00edtulo": "Asistencia Humana 2da fase (integraci\u00f3n Genesys)",
         "Estado": "0",
@@ -20,7 +33,7 @@
         "Etiqueta": "{}",
         "Nota": "Seguimiento del despliegue en sucursal:\r\n\r\n- NPS ANDI\r\n- Cantidad de interacciones\r\n- Comentarios de clientes\r\n- Encuesta QR\r\n- Oportunidades de mejora",
         "Dep\u00f3sito": "Experiencia Sucursal",
-        "FechaInicio": "2025-05-20T10:00:00Z",
+        "FechaInicio": "2024-05-20T10:00:00Z",
         "FechaVencimiento": "2025-12-20T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"2b48a01f-79ef-44dc-84d5-5553664472f6, 3fed79e5-735e-44a4-a916-cbe1fc8c6730, 5a32f54a-a511-4e3c-8b81-39b986912718, "
