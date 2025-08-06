@@ -262,14 +262,14 @@
     {
         "ID": "OWT23GNLykmQt4kJtLKm8GQAHaxT",
         "T\u00edtulo": "Despliegue ANDI - Sucursales de interior",
-        "Estado": "0",
+        "Estado": "100",
         "Prioridad": "3",
-        "Etiqueta": "{}",
+        "Etiqueta": "{\"category1\":true}",
         "Nota": "Despliegue del nuevo modelo de atenci\u00f3n para el retiro de env\u00edos. \nSucursales:\r\n\r\n- Jujuy\r\n- Tucum\u00e1n\r\n- Rosario (Av. Eva per\u00f3n)\r\n- C\u00f3rdoba (Av. Gral. paz)",
         "Dep\u00f3sito": "Experiencia Sucursal",
         "FechaInicio": "2025-05-20T10:00:00Z",
         "FechaVencimiento": "2025-07-31T10:00:00Z",
-        "FechaFinalizaci\u00f3n": "",
+        "FechaFinalizaci\u00f3n": "2025-08-06T15:23:54.6570148Z",
         "Asignados": "\"\"2b48a01f-79ef-44dc-84d5-5553664472f6, 3fed79e5-735e-44a4-a916-cbe1fc8c6730, 5a32f54a-a511-4e3c-8b81-39b986912718, "
     },
     {
