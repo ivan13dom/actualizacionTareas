@@ -1,18 +1,5 @@
 [
     {
-        "ID": "aDvWYghAiUitmoyPbqytsGQAMYX4",
-        "T\u00edtulo": "Encuesta clientes de FORD",
-        "Estado": "50",
-        "Prioridad": "5",
-        "Etiqueta": "{}",
-        "Nota": "",
-        "Dep\u00f3sito": "Experiencia Sucursal",
-        "FechaInicio": "2025-06-04T10:00:00Z",
-        "FechaVencimiento": "2025-06-04T10:00:00Z",
-        "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\"3fed79e5-735e-44a4-a916-cbe1fc8c6730, 5a32f54a-a511-4e3c-8b81-39b986912718, c49e46a7-4949-407a-918a-c00b51cbdca3, "
-    },
-    {
         "ID": "MGleOCueYEGvnxYK2WOEmmQAGmeX",
         "T\u00edtulo": "Store Locator ",
         "Estado": "50",
@@ -284,6 +271,19 @@
         "FechaVencimiento": "2025-08-23T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"2b48a01f-79ef-44dc-84d5-5553664472f6, 3fed79e5-735e-44a4-a916-cbe1fc8c6730, 5a32f54a-a511-4e3c-8b81-39b986912718, "
+    },
+    {
+        "ID": "aDvWYghAiUitmoyPbqytsGQAMYX4",
+        "T\u00edtulo": "Encuesta clientes de FORD",
+        "Estado": "100",
+        "Prioridad": "5",
+        "Etiqueta": "{}",
+        "Nota": "Se realizo encuesta a clientes de FORD, por incidencias de mercader\u00eda da\u00f1ada, con la finalidad de encontrar puntos de mejora y tener mayor informaci\u00f3n sobre la frecuencia de esta problem\u00e1tica. Se env\u00edo un total de 117 notificaciones.",
+        "Dep\u00f3sito": "Experiencia Sucursal",
+        "FechaInicio": "2025-06-04T10:00:00Z",
+        "FechaVencimiento": "2025-06-04T10:00:00Z",
+        "FechaFinalizaci\u00f3n": "2025-08-06T14:16:56.9176623Z",
+        "Asignados": "\"\"3fed79e5-735e-44a4-a916-cbe1fc8c6730, 5a32f54a-a511-4e3c-8b81-39b986912718, c49e46a7-4949-407a-918a-c00b51cbdca3, "
     },
     {
         "ID": "XcSowy8HsUSg6JgRv26LyGQACoo1",
