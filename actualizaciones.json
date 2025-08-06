@@ -88,5 +88,10 @@
         "ID": "uHPHaiCsqU6vC6CLR9011GQAEauK",
         "comentario": "Completado",
         "fecha": "2025-08-04T12:27:02.692319"
+    },
+    {
+        "ID": "hWJWmHNAEkS4DCWLsFNaxWQAD71R",
+        "comentario": "Falta validar con el equipo de Andreani.com si es posible encriptar los datos del env\u00edo en el seguimiento.",
+        "fecha": "2025-08-06T16:23:20.196619"
     }
 ]
