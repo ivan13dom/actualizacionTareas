@@ -1,5 +1,18 @@
 [
     {
+        "ID": "aFSpUkyq4UWlIg1Snbaxf2QAMFAR",
+        "T\u00edtulo": "Asistencia humana 1ra etapa (sin integraci\u00f3n Genesys)",
+        "Estado": "50",
+        "Prioridad": "5",
+        "Etiqueta": "{}",
+        "Nota": "",
+        "Dep\u00f3sito": "Experiencia Digital",
+        "FechaInicio": "2024-12-30T10:00:00Z",
+        "FechaVencimiento": "2025-08-06T10:00:00Z",
+        "FechaFinalizaci\u00f3n": "",
+        "Asignados": "\"\"c49e46a7-4949-407a-918a-c00b51cbdca3, "
+    },
+    {
         "ID": "cHhNiBbs6UGhwbdIIb_v52QACLnu",
         "T\u00edtulo": "Sucursal C\u00f3rdoba (av. Gral Paz) Despliegue Andi seguimiento",
         "Estado": "0",
