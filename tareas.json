@@ -5,12 +5,12 @@
         "Estado": "0",
         "Prioridad": "5",
         "Etiqueta": "{}",
-        "Nota": "Aguardando Planing para iniciar y definir fecha de finalizaci\u00f3n",
+        "Nota": "",
         "Dep\u00f3sito": "Experiencia Digital",
         "FechaInicio": "",
         "FechaVencimiento": "",
         "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\"d4f3b84b-14a1-4b1f-958a-4227f5497ad1, "
+        "Asignados": "\"\""
     },
     {
         "ID": "cHhNiBbs6UGhwbdIIb_v52QACLnu",
@@ -54,7 +54,7 @@
     {
         "ID": "-ODHCtZWQE2aRRgCBEDX0WQAEz04",
         "T\u00edtulo": "Sucursal Jujuy- Despliegue Andi seguimiento",
-        "Estado": "50",
+        "Estado": "0",
         "Prioridad": "5",
         "Etiqueta": "{}",
         "Nota": "",
@@ -171,7 +171,7 @@
     {
         "ID": "ZJqyC9SVmE-cn4TH20cv6GQAAc3P",
         "T\u00edtulo": "Gestion de entrega Bigger",
-        "Estado": "50",
+        "Estado": "0",
         "Prioridad": "5",
         "Etiqueta": "{}",
         "Nota": "Se crea BACKLOG para implementar mediante ANDI la coordinaci\u00f3n de env\u00edos bigger en estado pendiente de coordinaci\u00f3n o estacionados, con el fin de reducir costos operativos y mejorar el producto actual (llamados telef\u00f3nicos manuales desde la operaci\u00f3n de AVE)",
