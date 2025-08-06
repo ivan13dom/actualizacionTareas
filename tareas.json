@@ -1,16 +1,16 @@
 [
     {
-        "ID": "aFSpUkyq4UWlIg1Snbaxf2QAMFAR",
-        "T\u00edtulo": "Asistencia humana 1ra etapa (sin integraci\u00f3n Genesys)",
-        "Estado": "50",
+        "ID": "VSFGggwHCUWBHYfxECCS1mQAM-Z1",
+        "T\u00edtulo": "Asistencia Humana 2da fase (integraci\u00f3n Genesys)",
+        "Estado": "0",
         "Prioridad": "5",
         "Etiqueta": "{}",
-        "Nota": "",
+        "Nota": "Aguardando Planing para iniciar y definir fecha de finalizaci\u00f3n",
         "Dep\u00f3sito": "Experiencia Digital",
-        "FechaInicio": "2024-12-30T10:00:00Z",
-        "FechaVencimiento": "2025-08-06T10:00:00Z",
+        "FechaInicio": "",
+        "FechaVencimiento": "",
         "FechaFinalizaci\u00f3n": "",
-        "Asignados": "\"\"c49e46a7-4949-407a-918a-c00b51cbdca3, "
+        "Asignados": "\"\"d4f3b84b-14a1-4b1f-958a-4227f5497ad1, "
     },
     {
         "ID": "cHhNiBbs6UGhwbdIIb_v52QACLnu",
@@ -54,7 +54,7 @@
     {
         "ID": "-ODHCtZWQE2aRRgCBEDX0WQAEz04",
         "T\u00edtulo": "Sucursal Jujuy- Despliegue Andi seguimiento",
-        "Estado": "0",
+        "Estado": "50",
         "Prioridad": "5",
         "Etiqueta": "{}",
         "Nota": "",
@@ -171,7 +171,7 @@
     {
         "ID": "ZJqyC9SVmE-cn4TH20cv6GQAAc3P",
         "T\u00edtulo": "Gestion de entrega Bigger",
-        "Estado": "0",
+        "Estado": "50",
         "Prioridad": "5",
         "Etiqueta": "{}",
         "Nota": "Se crea BACKLOG para implementar mediante ANDI la coordinaci\u00f3n de env\u00edos bigger en estado pendiente de coordinaci\u00f3n o estacionados, con el fin de reducir costos operativos y mejorar el producto actual (llamados telef\u00f3nicos manuales desde la operaci\u00f3n de AVE)",
@@ -323,6 +323,19 @@
         "FechaVencimiento": "2025-08-25T10:00:00Z",
         "FechaFinalizaci\u00f3n": "",
         "Asignados": "\"\"c49e46a7-4949-407a-918a-c00b51cbdca3, d4f3b84b-14a1-4b1f-958a-4227f5497ad1, "
+    },
+    {
+        "ID": "aFSpUkyq4UWlIg1Snbaxf2QAMFAR",
+        "T\u00edtulo": "Asistencia humana 1ra etapa (sin integraci\u00f3n Genesys)",
+        "Estado": "100",
+        "Prioridad": "3",
+        "Etiqueta": "{}",
+        "Nota": "",
+        "Dep\u00f3sito": "Experiencia Digital",
+        "FechaInicio": "2024-12-30T10:00:00Z",
+        "FechaVencimiento": "2025-08-06T10:00:00Z",
+        "FechaFinalizaci\u00f3n": "2025-08-06T17:59:09.6386027Z",
+        "Asignados": "\"\"c49e46a7-4949-407a-918a-c00b51cbdca3, "
     },
     {
         "ID": "OWT23GNLykmQt4kJtLKm8GQAHaxT",
