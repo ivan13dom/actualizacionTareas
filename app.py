@@ -12,38 +12,43 @@ CORS(app)
 
 # Logging detallado
 logging.basicConfig(level=logging.DEBUG)
+
 # Variables en memoria (se reinician si Render reinicia)
 tareas_data = []
 actualizaciones_data = []
 
 # Datos para GitHub
-GITHUB_REPO = "ivan13dom/actualizacionTareas"  # Ej: ivan13dom/actualizaciones-tareas
+GITHUB_REPO = "ivan13dom/actualizacionTareas"
 TAREAS_FILE = "tareas.json"
 ACTUALIZACIONES_FILE = "actualizaciones.json"
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")  # Definido en Render
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
 # ==============================
 # Función para hacer commit seguro en GitHub
 # ==============================
 def commit_to_github(filename, content):
-    repo_url = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
     repo_path = "."
 
+    # Guardar archivo actualizado
+    with open(os.path.join(repo_path, filename), "w", encoding="utf-8") as f:
+        json.dump(content, f, indent=4, ensure_ascii=False)
+
+    # Configuración global de git
     subprocess.run(["git", "config", "--global", "user.email", "bot@render.com"])
     subprocess.run(["git", "config", "--global", "user.name", "Render Bot"])
 
-    # Sincronizar con remoto antes de commit
-    subprocess.run(["git", "-C", repo_path, "fetch", repo_url])
-    subprocess.run(["git", "-C", repo_path, "reset", "--hard", "FETCH_HEAD"])
+    # Repositorio remoto con token
+    remote_url = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
 
-    # Guardar archivo actualizado
-    with open(filename, "w") as f:
-        json.dump(content, f, indent=4)
-
-    # Commit y push
-    subprocess.run(["git", "-C", repo_path, "add", filename])
-    subprocess.run(["git", "-C", repo_path, "commit", "-m", f"Update {filename}"])
-    subprocess.run(["git", "-C", repo_path, "push", repo_url, "HEAD:main"])
+    try:
+        subprocess.run(["git", "-C", repo_path, "remote", "set-url", "origin", remote_url], check=True)
+        subprocess.run(["git", "-C", repo_path, "fetch", "origin"], check=True)
+        subprocess.run(["git", "-C", repo_path, "reset", "--hard", "origin/main"], check=True)
+        subprocess.run(["git", "-C", repo_path, "add", filename], check=True)
+        subprocess.run(["git", "-C", repo_path, "commit", "-m", f"Update {filename}"], check=True)
+        subprocess.run(["git", "-C", repo_path, "push", "origin", "main"], check=True)
+    except subprocess.CalledProcessError as e:
+        app.logger.error(f"[ERROR] Git push fallido: {e}")
 
 # ==============================
 # Endpoint: Obtener tareas
