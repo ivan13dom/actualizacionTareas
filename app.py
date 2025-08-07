@@ -29,19 +29,24 @@ GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 def commit_to_github(filename, content):
     repo_path = "."
 
-    # Guardar archivo actualizado
+    # Guardar archivo actualizado localmente
     with open(os.path.join(repo_path, filename), "w", encoding="utf-8") as f:
         json.dump(content, f, indent=4, ensure_ascii=False)
 
-    # Configuración global de git
+    # Configurar Git
     subprocess.run(["git", "config", "--global", "user.email", "bot@render.com"])
     subprocess.run(["git", "config", "--global", "user.name", "Render Bot"])
 
-    # Repositorio remoto con token
     remote_url = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
 
-    try:
+    # Verificar si el remoto 'origin' ya existe
+    result = subprocess.run(["git", "-C", repo_path, "remote"], capture_output=True, text=True)
+    if "origin" not in result.stdout.split():
+        subprocess.run(["git", "-C", repo_path, "remote", "add", "origin", remote_url], check=True)
+    else:
         subprocess.run(["git", "-C", repo_path, "remote", "set-url", "origin", remote_url], check=True)
+
+    try:
         subprocess.run(["git", "-C", repo_path, "fetch", "origin"], check=True)
         subprocess.run(["git", "-C", repo_path, "reset", "--hard", "origin/main"], check=True)
         subprocess.run(["git", "-C", repo_path, "add", filename], check=True)
@@ -49,6 +54,7 @@ def commit_to_github(filename, content):
         subprocess.run(["git", "-C", repo_path, "push", "origin", "main"], check=True)
     except subprocess.CalledProcessError as e:
         app.logger.error(f"[ERROR] Git push fallido: {e}")
+
 
 # ==============================
 # Endpoint: Obtener tareas
