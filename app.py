@@ -17,41 +17,45 @@ logging.basicConfig(level=logging.DEBUG)
 tareas_data = []
 actualizaciones_data = []
 
-# Datos para GitHub
+# Configuración del repositorio
 GITHUB_REPO = "ivan13dom/actualizacionTareas"
 TAREAS_FILE = "tareas.json"
 ACTUALIZACIONES_FILE = "actualizaciones.json"
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
+
 # ==============================
-# Función para hacer commit seguro en GitHub
+# Función para hacer commit seguro a GitHub
 # ==============================
 def commit_to_github(filename, content):
-    repo_path = "."
-
-    # Guardar archivo actualizado localmente
-    with open(os.path.join(repo_path, filename), "w", encoding="utf-8") as f:
-        json.dump(content, f, indent=4, ensure_ascii=False)
-
-    # Configurar Git
-    subprocess.run(["git", "config", "--global", "user.email", "bot@render.com"])
-    subprocess.run(["git", "config", "--global", "user.name", "Render Bot"])
-
-    remote_url = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
-
-    # Verificar si el remoto 'origin' ya existe
-    result = subprocess.run(["git", "-C", repo_path, "remote"], capture_output=True, text=True)
-    if "origin" not in result.stdout.split():
-        subprocess.run(["git", "-C", repo_path, "remote", "add", "origin", remote_url], check=True)
-    else:
-        subprocess.run(["git", "-C", repo_path, "remote", "set-url", "origin", remote_url], check=True)
-
     try:
-        subprocess.run(["git", "-C", repo_path, "fetch", "origin"], check=True)
-        subprocess.run(["git", "-C", repo_path, "reset", "--hard", "origin/main"], check=True)
-        subprocess.run(["git", "-C", repo_path, "add", filename], check=True)
-        subprocess.run(["git", "-C", repo_path, "commit", "-m", f"Update {filename}"], check=True)
-        subprocess.run(["git", "-C", repo_path, "push", "origin", "main"], check=True)
+        repo_path = "."
+
+        if not os.path.isdir(os.path.join(repo_path, ".git")):
+            subprocess.run(["git", "init"], cwd=repo_path, check=True)
+            subprocess.run(["git", "remote", "add", "origin", f"https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"], cwd=repo_path, check=True)
+
+        subprocess.run(["git", "config", "--global", "user.email", "bot@render.com"])
+        subprocess.run(["git", "config", "--global", "user.name", "Render Bot"])
+
+        subprocess.run(["git", "fetch", "origin"], cwd=repo_path, check=True)
+        subprocess.run(["git", "reset", "--hard", "origin/main"], cwd=repo_path, check=True)
+
+        # Guardar el archivo local
+        with open(os.path.join(repo_path, filename), "w") as f:
+            json.dump(content, f, indent=4)
+
+        subprocess.run(["git", "add", filename], cwd=repo_path, check=True)
+
+        # Verificar si hay cambios para commitear
+        result = subprocess.run(["git", "status", "--porcelain"], cwd=repo_path, capture_output=True, text=True)
+        if not result.stdout.strip():
+            app.logger.info(f"[INFO] No hay cambios en {filename}. No se hace commit.")
+            return
+
+        subprocess.run(["git", "commit", "-m", f"Update {filename}"], cwd=repo_path, check=True)
+        subprocess.run(["git", "push", "origin", "HEAD:main"], cwd=repo_path, check=True)
+
     except subprocess.CalledProcessError as e:
         app.logger.error(f"[ERROR] Git push fallido: {e}")
 
@@ -62,6 +66,7 @@ def commit_to_github(filename, content):
 @app.route("/tareas", methods=["GET"])
 def get_tareas():
     return jsonify(tareas_data)
+
 
 # ==============================
 # Endpoint: Sincronizar tareas (desde Power Automate)
@@ -75,13 +80,13 @@ def sync_tareas():
         tareas = json.loads(raw_data)
         tareas_data = tareas
 
-        # Subir backup a GitHub
         commit_to_github(TAREAS_FILE, tareas)
 
         return jsonify({"status": "ok", "message": "Tareas actualizadas"})
     except Exception as e:
         app.logger.error(f"Error en sync_tareas: {e}")
         return jsonify({"error": str(e)}), 500
+
 
 # ==============================
 # Endpoint: Guardar comentario
@@ -92,7 +97,7 @@ def save_comentario():
         data = request.get_json()
         data["fecha"] = datetime.datetime.now().isoformat()
 
-        # Leer actualizaciones existentes desde GitHub RAW
+        # Obtener actualizaciones existentes desde GitHub
         raw_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/main/{ACTUALIZACIONES_FILE}"
         response = requests.get(raw_url)
 
@@ -104,10 +109,8 @@ def save_comentario():
         else:
             actualizaciones = []
 
-        # Agregar nuevo comentario
         actualizaciones.append(data)
 
-        # Subir actualizaciones actualizadas a GitHub
         commit_to_github(ACTUALIZACIONES_FILE, actualizaciones)
 
         return jsonify({"status": "ok", "message": "Comentario guardado"})
@@ -115,5 +118,9 @@ def save_comentario():
         app.logger.error(f"Error en save_comentario: {e}")
         return jsonify({"error": str(e)}), 500
 
+
+# ==============================
+# Run
+# ==============================
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
