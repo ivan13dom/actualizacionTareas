@@ -108,7 +108,7 @@
         "T\u00edtulo": "Encuesta CASOS",
         "Estado": "50",
         "Prioridad": "5",
-        "Etiqueta": "{\"category18\":true}",
+        "Etiqueta": "{}",
         "Nota": "Mejorar informaci\u00f3n de la BBDD la misma deber\u00e1 traer\r\n\r\n Dato cliente, nro de env\u00edo, asunto, mail y fecha de env\u00edo de encuesta.\r\n\r\nCantidad de encuestas se env\u00edan x d\u00eda.\r\n incorporar caducidad de la encuesta para que el cliente tenga la posibilidad de responder sobre la encuesta hasta 7 dias post resoluci\u00f3n.",
         "Dep\u00f3sito": "Experiencia Sucursal",
         "FechaInicio": "2025-06-25T10:00:00Z",
