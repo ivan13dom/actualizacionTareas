@@ -1,5 +1,18 @@
 [
     {
+        "ID": "a1jfbCVZxUe-Y24N0qVbi2QAEagX",
+        "T\u00edtulo": "Respuestas de rese\u00f1as Google con IA",
+        "Estado": "50",
+        "Prioridad": "5",
+        "Etiqueta": "{}",
+        "Nota": "Con el fin de optimizar los recursos y lograr una gesti\u00f3n eficiente, SearchMAS nos present\u00f3 una propuesta para la gesti\u00f3n de las rese\u00f1as de Google con IA. \r\n\r\nBeneficios:\r\n\u2713 La soluci\u00f3n utiliza IA para responder de forma autom\u00e1tica y precisa a todas las rese\u00f1as de Google Business Profile. \r\n\u2713 Detectamos la tem\u00e1tica y el tono de cada rese\u00f1a (positiva, neutra o negativa) e identificamos la respuesta m\u00e1s adecuada desde la biblioteca de plantillas personalizadas precargadas.. \r\n\u2713 Responde incluso a rese\u00f1as sin comentarios, aumentando la tasa de interacci\u00f3n y actividad del perfil. \r\n\u2713 Configurable: permite excluir rese\u00f1as negativas para que el equipo humano pueda gestionarlas manualmente. \r\n\u2713 Reduce la carga operativa del call center y equipos de atenci\u00f3n al cliente, generando un ahorro significativo de tiempo y costos",
+        "Dep\u00f3sito": "Experiencia Sucursal",
+        "FechaInicio": "2025-07-08T10:00:00Z",
+        "FechaVencimiento": "2025-08-31T10:00:00Z",
+        "FechaFinalizaci\u00f3n": "",
+        "Asignados": "\"\"2b48a01f-79ef-44dc-84d5-5553664472f6, "
+    },
+    {
         "ID": "VSFGggwHCUWBHYfxECCS1mQAM-Z1",
         "T\u00edtulo": "Asistencia Humana 2da fase (integraci\u00f3n Genesys)",
         "Estado": "0",
