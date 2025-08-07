@@ -31,9 +31,16 @@ def commit_to_github(filename, content):
     try:
         repo_path = "."
 
+        # Verificar si hay un repo y origin configurado
         if not os.path.isdir(os.path.join(repo_path, ".git")):
             subprocess.run(["git", "init"], cwd=repo_path, check=True)
-            subprocess.run(["git", "remote", "add", "origin", f"https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"], cwd=repo_path, check=True)
+
+        # Forzar origin a estar bien configurado
+        subprocess.run(["git", "remote", "remove", "origin"], cwd=repo_path, stderr=subprocess.DEVNULL)
+        subprocess.run([
+            "git", "remote", "add", "origin",
+            f"https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
+        ], cwd=repo_path, check=True)
 
         subprocess.run(["git", "config", "--global", "user.email", "bot@render.com"])
         subprocess.run(["git", "config", "--global", "user.name", "Render Bot"])
@@ -41,13 +48,13 @@ def commit_to_github(filename, content):
         subprocess.run(["git", "fetch", "origin"], cwd=repo_path, check=True)
         subprocess.run(["git", "reset", "--hard", "origin/main"], cwd=repo_path, check=True)
 
-        # Guardar el archivo local
+        # Guardar archivo actualizado
         with open(os.path.join(repo_path, filename), "w") as f:
             json.dump(content, f, indent=4)
 
         subprocess.run(["git", "add", filename], cwd=repo_path, check=True)
 
-        # Verificar si hay cambios para commitear
+        # Confirmar solo si hay cambios
         result = subprocess.run(["git", "status", "--porcelain"], cwd=repo_path, capture_output=True, text=True)
         if not result.stdout.strip():
             app.logger.info(f"[INFO] No hay cambios en {filename}. No se hace commit.")
@@ -58,6 +65,7 @@ def commit_to_github(filename, content):
 
     except subprocess.CalledProcessError as e:
         app.logger.error(f"[ERROR] Git push fallido: {e}")
+
 
 
 # ==============================
