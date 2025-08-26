@@ -118,5 +118,10 @@
         "id": "hWJWmHNAEkS4DCWLsFNaxWQAD71R",
         "comentario": "En fase de prueba en notificaciones",
         "fecha": "2025-08-19T12:19:16.999860"
+    },
+    {
+        "id": "hWJWmHNAEkS4DCWLsFNaxWQAD71R",
+        "comentario": "Encuestas ya generadas, probando almacenamiento de datos y desencriptaci\u00f3n",
+        "fecha": "2025-08-26T13:57:07.482231"
     }
 ]
